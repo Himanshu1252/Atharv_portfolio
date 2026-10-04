@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atharv Shukla | Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#08090b;color:#f5f5f5;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.07),transparent 28%),radial-gradient(circle at 10% 80%,rgba(120,120,120,.05),transparent 25%);z-index:-1}
+a{color:inherit;text-decoration:none}
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);width:min(1100px,92%);padding:13px 18px;border:1px solid #25272b;background:rgba(12,13,15,.78);backdrop-filter:blur(16px);border-radius:18px;display:flex;justify-content:space-between;align-items:center;z-index:10;box-shadow:0 15px 50px #0008}
+.logo{font-weight:800;letter-spacing:-.5px}.logo span{color:#999}
+.navlinks{display:flex;gap:24px;color:#a9abb0;font-size:14px}.navlinks a:hover{color:#fff}
+.hero{min-height:100vh;display:grid;place-items:center;padding:130px 7% 70px;position:relative}
+.hero-inner{width:min(1100px,100%);display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center}
+.kicker{color:#8e9299;text-transform:uppercase;letter-spacing:4px;font-size:12px;margin-bottom:18px}
+h1{font-size:clamp(55px,9vw,105px);line-height:.9;letter-spacing:-6px;margin-bottom:28px}
+h1 span{color:#777}
+.hero p{max-width:650px;color:#aeb1b6;font-size:18px}
+.buttons{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{padding:13px 20px;border-radius:12px;border:1px solid #303238;background:#f3f3f3;color:#08090b;font-weight:700;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #fff2}
+.btn.alt{background:#111216;color:#eee}
+.card{border:1px solid #282a2f;background:linear-gradient(145deg,#111216,#0b0c0f);border-radius:28px;padding:30px;box-shadow:0 30px 70px #0008}
+.profile-card{position:relative;overflow:hidden}
+.profile-card:after{content:"";position:absolute;width:180px;height:180px;border:1px solid #333;border-radius:50%;right:-80px;top:-70px}
+.initials{width:88px;height:88px;border-radius:22px;display:grid;place-items:center;background:#191a1e;border:1px solid #333;font-size:28px;font-weight:800;margin-bottom:30px}
+.stat{display:flex;justify-content:space-between;border-top:1px solid #292b30;padding:17px 0;color:#999;font-size:14px}.stat b{color:#eee}
+section{padding:100px 7%}
+.container{width:min(1100px,100%);margin:auto}
+.section-title{font-size:42px;letter-spacing:-2px;margin-bottom:45px}.section-title span{color:#666}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.skill{padding:25px;border:1px solid #27292d;background:#0e0f12;border-radius:18px;transition:.25s}.skill:hover,.project:hover{transform:translateY(-5px);border-color:#555}
+.skill h3{margin-bottom:8px}.skill p,.project p{color:#92959b;font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{font-size:12px;padding:6px 10px;border-radius:999px;background:#191a1e;border:1px solid #2b2d31;color:#c5c7ca}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu .card h3{font-size:22px}.percent{font-size:42px;font-weight:800;margin-top:12px}.muted{color:#777}
+.project{padding:28px;border:1px solid #27292d;background:#0e0f12;border-radius:20px;transition:.25s;min-height:210px}
+.project-num{color:#666;font-size:13px;margin-bottom:30px}
+.contact{text-align:center;padding-bottom:120px}.contact .card{padding:55px}
+.contact h2{font-size:clamp(36px,6vw,65px);letter-spacing:-3px}.contact p{color:#96999f;margin:15px auto 28px;max-width:550px}
+footer{border-top:1px solid #202227;padding:25px 7%;color:#666;font-size:13px;text-align:center}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.navlinks{display:none}.hero-inner,.grid,.edu{grid-template-columns:1fr}.hero{padding-top:130px}h1{letter-spacing:-4px}.profile-card{max-width:500px}.section-title{font-size:35px}}
+</style>
+
+<style>
+/* PREMIUM UPGRADE */
+body{background:#050608}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero{background:radial-gradient(circle at 75% 35%,rgba(255,255,255,.075),transparent 24%)}
+.hero-inner{gap:80px}
+.hero h1{font-weight:900;text-shadow:0 0 50px #fff1}
+.hero p{font-size:19px;line-height:1.8}
+.card,.skill,.project{box-shadow:inset 0 1px #ffffff0a,0 25px 70px #0006}
+.profile-card{min-height:390px}
+.profile-card .initials{box-shadow:0 0 45px #fff1}
+.skill,.project{position:relative;overflow:hidden}
+.skill:before,.project:before{content:"";position:absolute;top:0;left:-100%;width:100%;height:1px;background:linear-gradient(90deg,transparent,#fff,transparent);transition:.6s}
+.skill:hover:before,.project:hover:before{left:100%}
+.skill:hover,.project:hover{box-shadow:inset 0 1px #ffffff12,0 20px 55px #0009}
+.percent{font-size:48px}
+.section-title{font-weight:800}
+.tag{transition:.2s}.tag:hover{background:#24262b;color:#fff;transform:translateY(-2px)}
+.btn{position:relative;overflow:hidden}
+.btn:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent,rgba(255,255,255,.25),transparent);transform:translateX(-120%);transition:.5s}
+.btn:hover:after{transform:translateX(120%)}
+.kicker{font-weight:700}
+.contact .card{background:radial-gradient(circle at 50% 0,#1b1c20,transparent 45%),#0c0d10}
+@media(max-width:800px){
+ .hero-inner{gap:40px}.hero p{font-size:16px}
+ .hero{min-height:auto;padding-bottom:80px}
+ .profile-card{min-height:auto}
+ section{padding:75px 6%}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="logo">ATHARV<span>.DEV</span></div>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="about">
+  <div class="hero-inner">
+    <div class="reveal">
+      <div class="kicker">Computer Science Student</div>
+      <h1>ATHARV<br><span>SHUKLA</span></h1>
+      <p>Motivated aspiring software developer building strong foundations in programming and web development through continuous learning and practical experimentation.</p>
+      <div class="buttons">
+        <a class="btn" href="#projects">Explore Work</a>
+        <a class="btn alt" href="mailto:atharvshukla871@gmail.com">Contact Me</a>
+      </div>
+    </div>
+    <div class="card profile-card reveal">
+      <div class="initials">AS</div><div style="display:inline-flex;align-items:center;gap:8px;border:1px solid #292b30;background:#15161a;border-radius:999px;padding:7px 11px;color:#aaa;font-size:12px;margin-bottom:20px"><i style="width:7px;height:7px;background:#ddd;border-radius:50%;display:block"></i> OPEN TO LEARNING & OPPORTUNITIES</div>
+      <h2>Aspiring Software Developer</h2>
+      <p style="color:#92959b;margin:8px 0 25px">Focused on programming, problem solving and building practical digital experiences.</p>
+      <div class="stat"><span>Class 10th</span><b>90%</b></div>
+      <div class="stat"><span>Class 12th</span><b>82%</b></div>
+      <div class="stat"><span>School</span><b>Prabhat Academy</b></div>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+<div class="container">
+  <div class="section-title reveal">Technical <span>Skills</span></div>
+  <div class="grid">
+    <div class="skill reveal"><h3>Programming</h3><p>Building programming fundamentals and logical problem-solving skills.</p><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">C</span></div></div>
+    <div class="skill reveal"><h3>Web Development</h3><p>Creating clean, responsive web pages and learning modern frontend concepts.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+    <div class="skill reveal"><h3>Core Strengths</h3><p>Curious mindset with a focus on learning by doing and improving consistently.</p><div class="tags"><span class="tag">Problem Solving</span><span class="tag">Logical Thinking</span><span class="tag">Self Learning</span></div></div>
+    <div class="skill reveal"><h3>Currently Learning</h3><p>Expanding practical development experience through experiments and personal projects.</p><div class="tags"><span class="tag">Projects</span><span class="tag">Development</span><span class="tag">Practice</span></div></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-title reveal">Education <span>Background</span></div>
+  <div class="edu">
+    <div class="card reveal"><div class="muted">CLASS 10TH</div><div class="percent">90%</div><h3>Prabhat Academy</h3></div>
+    <div class="card reveal"><div class="muted">CLASS 12TH</div><div class="percent">82%</div><h3>Prabhat Academy</h3></div>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+  <div class="section-title reveal">Projects & <span>Learning</span></div>
+  <div class="grid">
+    <div class="project reveal"><div class="project-num">01 / PROGRAMMING</div><h3>Programming Practice</h3><p>Strengthening Java, Python and C fundamentals through coding exercises, experimentation and practical problem solving.</p></div>
+    <div class="project reveal"><div class="project-num">02 / WEB</div><h3>Web Development</h3><p>Learning to build responsive interfaces using HTML and CSS while developing a stronger understanding of frontend structure and design.</p></div>
+    <div class="project reveal"><div class="project-num">03 / IN PROGRESS</div><h3>Personal Projects</h3><p>Continuously exploring and building practical projects. The portfolio will grow as new projects are completed.</p></div>
+    <div class="project reveal"><div class="project-num">04 / FUTURE</div><h3>Real-World Development</h3><p>Working toward larger software projects and opportunities that turn programming knowledge into useful products.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+  <div class="card reveal">
+    <div class="kicker">Let's Connect</div>
+    <h2>Ready to build<br><span style="color:#666">something useful.</span></h2>
+    <p>Interested in software development, practical projects and continuous learning.</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn" href="mailto:atharvshukla871@gmail.com">atharvshukla871@gmail.com</a>
+      <a class="btn alt" href="tel:9792573599">9792573599</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>© 2026 Atharv Shukla · Aspiring Software Developer</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
